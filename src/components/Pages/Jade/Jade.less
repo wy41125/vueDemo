@@ -1,0 +1,65 @@
+@import '../../../assets/less/rem.less';
+.goodsBox{
+    .rem(10);
+    padding-top: @rv;
+    .goods-detile{
+        border-bottom: 1px solid #E3E3E3;
+        .rem(10);
+        padding: @rv;
+        background: #ffffff;
+        .goods-detile-left{
+            display: inline-block;
+            .rem(90);
+            height: @rv;
+            width: @rv;
+            &{
+                .rem(10);
+                margin-right: @rv;
+            }
+        }
+        .goods-detile-right{
+            display: inline-block;
+            width: 65%;
+            .goods-detile-name{
+                color: #333333;
+                .rem(14);
+                font-size: @rv;
+                &{
+                    .rem(15);
+                    margin-bottom: @rv;
+                }
+            }
+            .goods-detile-price{
+                .price-left{
+                    display: inline-block;
+                    color: #999999;
+                    .rem(12);
+                    font-size: @rv;
+                    span{
+                        color: #FF0000;
+                    }
+                }
+                .price-btn{
+                    display: inline-block;
+                    vertical-align: middle;
+                    .rem(80);
+                    width: @rv;
+                    float: right;
+                    button{
+                        width: 100%;
+                        .rem(28);
+                        height: @rv;
+                        background: #24CF68;
+                        color: #ffffff;
+                        border-radius: 10px;
+                        border: 0;
+                        &{
+                            .rem(13);
+                            font-size: @rv;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

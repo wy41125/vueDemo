@@ -10,7 +10,7 @@
         <img
           slot="icon"
           slot-scope="props"
-          :src="props.active ? icon.active1 : icon.normal1"
+          :src="props.active==0 ? icon.active1 : icon.normal1"
         >
       </van-tabbar-item>
       <van-tabbar-item icon="records">
@@ -18,7 +18,7 @@
         <img
           slot="icon"
           slot-scope="props"
-          :src="props.active ? icon.active2 : icon.normal2"
+          :src="props.active==1 ? icon.active2 : icon.normal2"
         >
       </van-tabbar-item>
       <van-tabbar-item icon="cart">
@@ -26,7 +26,7 @@
         <img
           slot="icon"
           slot-scope="props"
-          :src="props.active ? icon.active3 : icon.normal3"
+          :src="props.active==2 ? icon.active3 : icon.normal3"
         >
       </van-tabbar-item>
       <van-tabbar-item icon="contact">
@@ -34,7 +34,7 @@
         <img
           slot="icon"
           slot-scope="props"
-          :src="props.active ? icon.active4 : icon.normal4"
+          :src="props.active==3 ? icon.active4 : icon.normal4"
         >
       </van-tabbar-item>
     </van-tabbar>
@@ -52,11 +52,11 @@ export default {
         normal1: require('../../src/assets/tabbar/index_active.png'),
         active1: require('../../src/assets/tabbar/index_active.png'),
         normal2: require('../../src/assets/tabbar/jade.png'),
-        active2: require('../../src/assets/tabbar/jade.png'),
+        active2: require('../../src/assets/tabbar/jade_active.png'),
         normal3: require('../../src/assets/tabbar/Lottery.png'),
-        active3: require('../../src/assets/tabbar/Lottery.png'),
+        active3: require('../../src/assets/tabbar/Lottery_active.png'),
         normal4: require('../../src/assets/tabbar/my.png'),
-        active4: require('../../src/assets/tabbar/my.png'),
+        active4: require('../../src/assets/tabbar/my_active.png'),
       }
     }
   },
@@ -69,8 +69,14 @@ export default {
   methods:{
     changerTabbarAcitve(){
       this.nowPath = this.$route.path;
-      if(this.nowPath == '/cart'){
+      if(this.nowPath == '/my'){
+        this.active=3
+      }else if(this.nowPath == '/lottery'){
         this.active=2
+      }else if(this.nowPath == '/jade'){
+        this.active=1
+      }else if(this.nowPath == '/'){
+        this.active=0
       }
     },
     changeTabbar(active){
@@ -97,5 +103,6 @@ export default {
 .main-div{
     width: 100%;
     background-color: #f6f7f8;
+    margin-bottom: 50px;
 }
 </style>

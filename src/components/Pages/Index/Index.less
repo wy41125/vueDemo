@@ -1,0 +1,383 @@
+@import '../../../assets/less/rem.less';
+.top-div{
+    background-color: #fff;
+    .rem(10);
+    margin-bottom: @rv;
+    .top-div-bg{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        &{
+            .rem(180);
+            height: @rv;
+        }
+        background: url("../../../assets/index/topBg.png") no-repeat;
+        background-size: 100%;
+        .top-div-swipe {
+            box-sizing: border-box;
+            position: absolute;
+            width: 90%;
+            box-shadow:0px 10px 20px 0px rgba(233,231,228,0.75);
+            &{
+                .rem(25);
+                top: @rv;
+            }
+            left: 5%;
+            &{
+                .rem(150);
+                height: @rv;
+            }
+            &{
+                .rem(20);
+                border-radius: @rv;
+            }
+            overflow: hidden;
+        }
+    }
+}
+.top-div-Notice{
+    background: #fff;
+    .rem(15);
+    padding-bottom: @rv;
+    .voticeIcon{
+        &{
+            .rem(20);
+            margin-left: @rv;
+            margin-right: @rv;
+        }
+        &{
+            .rem(15);
+            margin-top: @rv;
+        }
+        &{
+            .rem(12);
+            font-size: @rv;
+        }
+        color: #333;
+        i{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+            &{
+                .rem(14);
+                width: @rv;
+            }
+            &{
+                .rem(12);
+                height: @rv;
+            }
+            background: url(../../../assets/index/iconNotice.png) no-repeat;
+            background-size: 100%;        
+        }
+        span{
+            display: inline-block;
+            color: #999;
+            margin-left: 10px;
+        }
+    }
+    .jumpTwo{
+        .rem(15);
+        margin-top: @rv;
+        .Live-div{
+            &{
+                .rem(10);
+                padding: @rv;
+            }
+            &{
+                .rem(5);
+                padding-left: @rv;
+                padding-right: @rv;
+            }
+            &{
+                .rem(135);
+                width: @rv;
+            }
+            display: inline-block;
+            background: #fff;
+            box-shadow:0px 10px 20px 0px rgba(233,231,228,0.75);
+            border-radius:10px;
+            .div-left{
+                display: inline-block;
+                h2{
+                    .rem(16);
+                    font-size:@rv; 
+                }
+                p{
+                    .rem(11);
+                    font-size:@rv; 
+                    color: #999;
+                }
+            }
+            img{
+                .rem(30);
+                width: @rv;
+                height: @rv;
+                float: right;
+                &{
+                    .rem(5);
+                    margin-top: @rv;
+                }
+            }
+        }
+    }
+}
+.exhibition{
+    background: #fff;
+    .rem(10);
+    margin-bottom: @rv;
+    &{
+        .rem(10);
+        padding-left:@rv;
+        padding-right: @rv; 
+    }
+    &{
+        .rem(15);
+        padding-top:@rv;
+        padding-bottom: @rv; 
+    }
+    .exhibition-title{
+        .rem(18);
+        margin-bottom: @rv;
+        color: #333333;
+        &{
+            .rem(16);
+            font-size: @rv;
+        }
+        i{
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: #24CF68;
+            border-radius: 5px;
+            margin-right: 8px;
+        }
+        span{
+            color: #999999;
+            .rem(11);
+            font-size: @rv;
+            display: inline-block;
+            &{
+                .rem(10);
+                margin-left: @rv;
+            }
+        }
+    }
+    .exhibition-boxs{
+        width: 100%;
+        background: #fff;
+        box-shadow:0px 8px 15px 0px rgba(224,224,224,0.75);
+        border-radius:10px;
+        .exhibition-box-img{
+            width: 100%;
+            .rem(140);
+            height: @rv;
+            position: relative;
+            i{
+                display: inline-block;
+                .rem(63);
+                height: @rv;
+                width: @rv;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: url(../../../assets/index/jadeIcon.png) no-repeat;
+                background-size: 100%;
+            }
+        }
+        .exhibition-box-text{
+            &{
+                .rem(15);
+                margin-top: @rv;
+                margin-bottom: @rv;
+            }
+            &{
+                .rem(10);
+                margin-left: @rv;
+                margin-right: @rv;
+            }
+            .exhibition-box-name{
+                .rem(15);
+                margin-bottom: @rv;
+                .name{
+                    color: #333333;
+                    .rem(16);
+                    font-size: @rv;
+                    display: inline-block;
+                    font-weight: 500;
+                }
+                p{
+                    display: inline-block;
+                    float: right;
+                    color: #999999;
+                    .rem(12);
+                    font-size: @rv;
+                    span{
+                        color: #24CF68;
+                        .rem(18);
+                        font-size: @rv;
+                    }
+                }
+            }
+            .exhibition-box-btn{
+                .box-btn-left{
+                    display: inline-block;
+                    width: 65%;
+                    .rem(15);
+                    margin-bottom: @rv;
+                    p{
+                        color: #999999;
+                        .rem(11);
+                        font-size: @rv;
+                        &{
+                            .rem(10);
+                            margin-bottom: @rv;
+                        }
+                    }
+                }
+                .btn{
+                    float: right;
+                    border: 0;
+                    background: #24CF68;
+                    border-radius: 10px;
+                    color: #fff;
+                    margin-top: 5px;
+                    .rem(13);
+                    font-size: @rv;
+                    &{
+                        .rem(8);
+                        padding:@rv 0; 
+                    }
+                    &{
+                        .rem(15);
+                        padding-left:@rv; 
+                        padding-right: @rv;
+                    }
+                }
+            }
+        }
+    }
+}
+.winning{
+    background: #FDBE89;
+    .rem(20);
+    padding-bottom: @rv;
+    .winning-title{
+        .rem(131);
+        height: @rv;
+        background: url(../../../assets/index/winning.png) no-repeat;
+        background-size: 100%;
+        .title-text{
+            &{
+                .rem(39);
+                margin-left: @rv;
+            }
+            color: #FF9500;
+            .rem(11);
+            font-size: @rv;
+            h3{
+                font-weight: bold;
+                color: #F8402C;
+                .rem(20);
+                font-size: @rv;
+                &{
+                    .rem(38);
+                    padding-top:@rv;
+                }
+            }
+        }
+    }
+    .winning-box{
+        .rem(10);
+        padding: 0 @rv;
+        .winning-box-detile{
+            .rem(10);
+            margin: @rv 0;
+            .box-title{
+                color: #D06307;
+                .rem(14);
+                font-size: @rv;
+                &{
+                    .rem(12.5);
+                    margin-bottom: @rv;
+                }
+                &{
+                    .rem(20);
+                    line-height: @rv;
+                }
+                span{
+                    color: #fff;
+                }
+            }
+            .box-detile{
+                background: #fff;
+                border-radius: 10px;
+                .rem(10);
+                padding: @rv;
+                &{
+                    .rem(8);
+                    padding-bottom: @rv;
+                }
+                .box-detile-left{
+                    .rem(90);
+                    height: @rv;
+                    width: @rv;
+                    position: relative;
+                    display: inline-block;
+                    i{
+                        display: inline-block;
+                        .rem(42.5);
+                        width: @rv;
+                        height: @rv;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        z-index: 1;
+                        background: url(../../../assets/index/winningIcon.png) no-repeat;
+                        background-size: 100%;
+                    }
+                }
+                .box-detile-right{
+                    display: inline-block;
+                    float: right;
+                    width:63%;
+                    .rem(10);
+                    margin-left: @rv;
+                    &{
+                        color: #999;
+                        .rem(14);
+                        font-size: @rv;
+                    }
+                    .detile-right-top{
+                        .rem(5);
+                        margin-bottom: @rv;
+                        padding-top: @rv;
+                        img{
+                            .rem(36);
+                            width: @rv;
+                            height: @rv;
+                            margin-right: 10px;
+                            vertical-align: middle;
+                        }
+                        .name{
+                            display: inline-block;
+                            span{
+                                color: #333;
+                            }
+                        }
+                    }
+                    .detile-right-bottom{
+                        .rem(12);
+                        font-size:@rv;
+                        .introduce{
+                            .rem(20);
+                            line-height: @rv;
+                            span{
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

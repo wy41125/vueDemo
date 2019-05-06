@@ -3,9 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import { Button,Tabbar, TabbarItem,Swipe, SwipeItem} from 'vant';
+import {Cell,CellGroup,SwipeCell ,Area ,NavBar, Button,Tabbar, TabbarItem,Swipe, SwipeItem,NoticeBar,Row, Col,Progress,Tab, Tabs } from 'vant';
 
-Vue.use(Button).use(Tabbar).use(TabbarItem).use(Swipe).use(SwipeItem)
+Vue.use(Cell).use(CellGroup).use(SwipeCell).use(Area).use(NavBar).use(Tabs).use(Tab).use(Button).use(Tabbar).use(TabbarItem).use(Swipe).use(SwipeItem).use(NoticeBar).use(Row).use(Col).use(Progress )
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
